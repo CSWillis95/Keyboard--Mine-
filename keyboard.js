@@ -174,7 +174,7 @@ const Keyboard = {
 
 window.addEventListener("DOMContentLoaded", function () {
     Keyboard.init();
-    Keyboard.open('dcode', function (currentValue) {
+    Keyboard.open(function (currentValue) {
         console.log("value changed" + currentValue)
     }, function (currentValue) {
         console.log("keyboard closed! Finishing value: " + currentValue)
